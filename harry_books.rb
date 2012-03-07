@@ -1,7 +1,6 @@
 class HarryPotterBookShop
 
 	def buy (books)
-		return 0 if books == 0
-		return 42
+		return (books*42)*(1 - 0.05 * (books - 1) )
 	end
 end
