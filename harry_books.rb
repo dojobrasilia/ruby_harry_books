@@ -9,9 +9,6 @@ class HarryPotterBookShop
 				value = buy(i)+buy(books-i)	
 				if (value < min)
 					min = value
-					print min
-					print ":"
-					puts  i
 				end
 			}
 			return min
