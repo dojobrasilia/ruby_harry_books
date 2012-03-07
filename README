@@ -1,0 +1,33 @@
+07/03/2012
+	
+	Participantes:
+		- Fabs
+		- Delfino
+
+	=]
+		- Rendeu bem.
+			- Refatorou bastante mas principalmente focar em visualizar a forma da necessidade da refatoração antes de fazê-la.
+		- Comitamos bastante
+		- Usamos o http://dojopuzzles.com/
+
+	=[
+		- Começamos atrasados (culpa do Fabs).
+		- Ficamos inseguros com relação ao entendimento do problema.
+			- Por fim não sabemos se resolvemos ou não.
+		- O código ficou acoplado a fórmula de caĺculo do desconto (e não a uma tabela de desconto).
+			- Essa é uma faca de dois gumes. Ficou mais simples mas provavelmente mais difícil de manter.
+
+	Obs: Mandamos a seguinte mensagem pro pessoal do dojopuzzles.com
+		"Olá,
+			Nós engajamos no problema "Livraria do Harry Potter" (http://dojopuzzles.com/problemas/exibe/livraria-do-harry-potter/)" no nosso Dojo de hoje e acreditamos que tenha um problema nele (ou nosso entendimento está errado).
+
+			Nós identificamos que no caso exposto (8 livros) o melhor resultado é um grupo de 5 livros (20% de desconto) e um de 3 livros (10% de desconto).
+				>> 5*42*(1 - 0,2)+3*42*(1 - 0,1) = 281,4
+			O exemplo do Kata sugere que o melhor resultado seria dois grupos de 4 livros (15% de desconto) mas o valor não confere.
+				>> 2*4*42*(1 - 0,15) = 285,6 (No exemplo diz que o resultado seria 268,8)
+
+			Podemos também ter entendido o problema de maneira errada (o que justificaria o nosso resultado discrepante).
+			Nossa versão da solução se encontra disponível em : https://github.com/dojobrasilia/ruby_harry_books
+			Outra observação é que caso nossa interpretação esteja correta o melhor resultado será sempre formar os grupos com o maior número de livros possível (linha 7 do nosso algoritmo). Observamos isso pois testamos até 25 livros e a linha 11 nunca foi invocada.
+
+			Grato #dojoBrasilia"
