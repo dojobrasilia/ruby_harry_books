@@ -29,4 +29,16 @@ describe "HarryPotterBookShop" do
 	it 'gives 20% of discount for five books' do
 		@shop.buy(5).should == (5*42)*(1 - 0.2)
 	end
+
+	it 'The best price for 6 books is 210 (5 books with 20% and 1 with none)' do
+		@shop.buy(6).should == 210
+	end
+
+	it 'The best price for 7 books is 247.8 (5 books with 20% and 2 with 5%)' do
+		@shop.buy(7).should == 247.8
+	end
+
+	it 'The best price for 8 books is 281.4 (5 books with 20% and 3 with 10%)' do
+		@shop.buy(8).should == 281.4
+	end
 end
