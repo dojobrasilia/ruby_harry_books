@@ -20,4 +20,9 @@ describe "HarryPotterBookShop" do
 		shop = HarryPotterBookShop.new
 		shop.buy(3).should == (3*42)*(1 - 0.1)
 	end
+
+	it 'gives 15% of discount for four books' do
+		shop = HarryPotterBookShop.new
+		shop.buy(4).should == (4*42)*(1 - 0.15)
+	end
 end
